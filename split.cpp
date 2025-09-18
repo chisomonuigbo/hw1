@@ -16,8 +16,8 @@ the function below should be the only one in this file.
 
 void split(Node*& in, Node*& odds, Node*& evens)
 {
-  Node *tempNode = nullptr;
-  if (in == nullptr)
+  Node *tempNode = NULL;
+  if (in == NULL)
   {
     return;
   }

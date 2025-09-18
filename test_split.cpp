@@ -38,7 +38,23 @@ int main(int argc, char* argv[])
     temp = temp->next;
   }
 
-  cout << "hi";
 
-return 0;
+  while (odds != nullptr) {
+    temp = odds;
+    odds = odds->next;
+    delete odds;
+    odds = NULL;
+  }
+
+  while (head != nullptr) {
+    temp = evens;
+    evens = evens->next;
+    delete temp;
+    evens = nullptr;
+  }
+
+  delete temp;
+  temp = nullptr;
+  
+  return 0;
 }
